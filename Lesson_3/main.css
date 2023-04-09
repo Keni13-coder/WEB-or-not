@@ -1,0 +1,15 @@
+.dark{
+    background-color: black;
+    color: #fff;
+}
+
+
+
+.line{
+    background-color: blue;
+    color: red;
+}
+.btn{
+    color: cornflowerblue;
+    background-color: darkslateblue;
+}
