@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --index: calc(1vw + 1vh)
+}
+@font-face {
+    font-family: sedgwick-a;
+    src: url(fonts/SedgwickAveDisplay-Regular.ttf);
+}
+body{
+    background-color: #000;
+    color: #fff;
+    font-family: sedgwick-a;
+    font-size:var(--index) ;
+}
+/* .header{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    position: absolute;
+    right: 750px;
+    line-height: 40px;
+} */
+.btn{
+    margin: calc(var(--index)/2.2) 0 0 0;
+    width: calc(var(--index)*3);
+    height:var(--index);
+    position: relative;
+    left: calc(var(--index)*11.17);
+    font-size:calc(var(--index)/2.2) ;
+    /* padding: calc(var(--index)) ; */
+    border-radius:calc(var(--index)*11.17) ;
+    border: calc(var(--index)/5) solid #000;
+}
+.header__form{
+    display: flex;
+    flex-direction: column;
+    width: calc(var(--index)*14.14);
+    position: absolute;
+    right: calc(var(--index)*27);
+    line-height:calc(var(--index)*1.5);
+}
+.TEXT{
+    width: calc(var(--index)*14.12);
+    height:calc(var(--index)/1.4) ;
+    font-size:calc(var(--index)/2.2);
+    border: calc(var(--index)/16) solid #000;
+}
+
+.Email{
+    width: calc(var(--index)*14.12);
+    height:calc(var(--index)/1.4) ;
+    font-size:calc(var(--index)/2.2);
+    padding: calc(var(--index)/2.3) 0 calc(var(--index)/2.3) 0  ;
+    border: calc(var(--index)/16) solid #000;
+    
+}
+.btn-2{
+    margin: calc(var(--index)/2.2) 0 0 0;
+    width: calc(var(--index)*20);
+    height:calc(var(--index)*10);
+    position: fixed;
+    left: calc(var(--index)*21.5);
+    bottom:calc(var(--index)*13);
+    font-size:var(--index) ;
+    /* padding: calc(var(--index)) ; */
+    border-radius:calc(var(--index)*11.17) ;
+    border: calc(var(--index)/5) solid #000000;
+    background-color: #000;
+    color: #fff;
+}
