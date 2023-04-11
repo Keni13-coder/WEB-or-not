@@ -21,7 +21,7 @@ btns.onclick = (e) =>{
                 bt.setAttribute("style","opacity: 1 ; transition: opacity 4s; transform: translate3d(0,calc(var(--scrollTop) / 5.7),600px);font-size:calc(var(--index)*5);" );
                 alert(`${namee} Тебе открылся путь в Земли Рассвета`)}
             else{
-                alert(`Прилядись ${namee} ты что-то упускаешь.`)
+                alert(`Приглядись ${namee} ты что-то упускаешь.`)
             }}    
            
 
