@@ -96,11 +96,30 @@ body{
     top: calc(var(--index)*10.9);
     
 }
+#caves{
+    height:calc(var(--index)*42.5) ;
+}
+
+#rock{
+z-index: -1;
+top:calc(var(--index)*11) ;
+}
+
+#rock-2{
+    z-index: -1;
+    top:calc(var(--index)*11) ;
+    }
+#rock-3{
+    z-index: -1;
+    top:calc(var(--index)*11) ;
+    }
+    
 .dragon{
     position: absolute;
-    top: calc(var(--index)*6);
-    left:calc(var(--index)*14) ;
+    top: calc(var(--index)*10.4);
+    left:calc(var(--index)*-4.5) ;
     z-index: -2;
+
 }
 .block{
     background-color:red;
@@ -114,31 +133,48 @@ body{
 .valley{
     position: absolute;
     width: 100%;
-    top: calc(var(--index)*46);
+    top: calc(var(--index)*53.42);
     /* left:calc(var(--index)*) ; */
     z-index: -3;
+}
+#grass{
+    z-index: -2;
+    /* top: calc(var(--index)); */
+}
+#gerl{
+    z-index: -2;
 }
 .ice-valley{
     position: absolute;
     width: 100%;
-    top: calc(var(--index)*81);
+    top: calc(var(--index)*90);
     /* left:calc(var(--index)*) ; */
     z-index: -3;
+}
+
+#ice{
+    z-index: -2;
+}
+
+#ice-2{
+    z-index: -2;
 }
 .end{
     position: relative;
     width:calc(var(--index)*20) ;
     left: calc(var(--index)*40);
-    top: calc(var(--index)*-20);
+    top: calc(var(--index)*-10);
     color: #eed91ada;
     text-shadow: 0 0 calc(var(--index)/1.4) black;
+    z-index: -3;
 }
 .lucky{
     position: relative;
     width:calc(var(--index)*20) ;
     left: calc(var(--index)*32.9);
-    top: calc(var(--index)*-15);
+    top: calc(var(--index)*-8);
     color: #eed91ada;
     text-shadow: 0 0 calc(var(--index)/1.4) black;
     font-size:calc(var(--index)*2) ;
+    z-index: -3;
 }
