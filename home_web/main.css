@@ -60,6 +60,8 @@ body{
     
 }
 .btn-2{
+    transform-style: preserve-3d;
+    perspective: 1500px;
     margin: calc(var(--index)/2.2) 0 0 0;
     width: calc(var(--index)*20);
     height:calc(var(--index)*10);
@@ -72,4 +74,9 @@ body{
     border: calc(var(--index)/5) solid #000000;
     background-color: #000;
     color: #fff;
+    opacity: 0;
+    transform: translate3d(0,0,0);
+    transition: opacity 0s, transform 4s,font-size 4s ;
+    text-shadow: 0 0 13px #c9da19;
+    will-change: transform;
 }
