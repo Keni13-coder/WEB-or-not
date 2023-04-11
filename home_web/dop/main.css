@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --index: calc(1vw + 1vh)
+}
+@font-face {
+	font-family: raleway_f;
+	src: url(../fonts/raleway-regular.woff2);
+
+}
+@font-face {
+	font-family: raleway_f;
+	src: url(../fonts/raleway-black.woff2);
+	font-weight: 900;
+}
+
+body{
+    font-family: raleway_f, sans-serif;
+	line-height: 1.55;
+    overflow-x: hidden;
+    background-color: #000000e0;
+    color: #fff;
+    text-shadow: 0 0 calc(var(--index)*1.5);
+    /* background-image: url(image/cosmic-background-with-colorful-laser-lights-perfect-for-a-digital-wallpaper.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; */
+
+}
+.intro{
+    font-size: calc(var(--index)*4);
+    max-width: calc(var(--index)*35);
+    max-height: calc(var(--index)*4);
+    position: absolute;
+    color: #000000e0;
+    opacity: 1;
+}
+.intro:hover{
+    color: #fff;
+}
+.header{
+    display: flex;
+    flex-direction: column;
+    width: calc(var(--index)*29);
+    text-transform: uppercase;
+    position: relative;
+    left:calc(var(--index)*36);
+    z-index: 1;
+}
+.head{
+    position: relative;
+    min-width: calc(var(--index)*40);
+    font-weight: 900;
+    text-align: center;
+    font-size:calc(var(--index));
+    left: calc(var(--index)*3.5);
+    
+}
+.paragraph{
+    max-width: calc(var(--index)*30);
+    margin:calc(var(--index)/2) 0 0 0 ;
+    font-size:calc(var(--index)/1.69);
+}
+
+.header__img{
+    width:calc(var(--index)*28.9);
+    height:calc(var(--index)*9.2) ;
+    top: calc(var(--index)/9) ;
+    position: absolute;
+    z-index: -1;
+    opacity: .3;
+
+}
+.info{
+    padding: calc(var(--index)*5) 0 calc(var(--index)) calc(var(--index));
+    width:calc(var(--index)*20) ;
+    /* border: 2px solid red; */
+    font-size: calc(var(--index)/1.6);
+}
+.info__h{
+    font-weight: 900;
+}
+.info__p{
+    font-family: cursive;
+
+}
+.back{
+    min-width: 100vw;
+    min-height: calc(var(--index));
+    position: absolute;
+    z-index: -3;
+    top: calc(var(--index)*10.9);
+    
+}
+.dragon{
+    position: absolute;
+    top: calc(var(--index)*6);
+    left:calc(var(--index)*14) ;
+    z-index: -2;
+}
+.block{
+    background-color:red;
+    position: absolute;
+    width: 100%;
+    height:calc(var(--index)/4);
+    top: calc(var(--index)*10.726);
+    z-index: -3;
+    opacity: .3;
+}
+.valley{
+    position: absolute;
+    width: 100%;
+    top: calc(var(--index)*46);
+    /* left:calc(var(--index)*) ; */
+    z-index: -3;
+}
+.ice-valley{
+    position: absolute;
+    width: 100%;
+    top: calc(var(--index)*81);
+    /* left:calc(var(--index)*) ; */
+    z-index: -3;
+}
+.end{
+    position: relative;
+    width:calc(var(--index)*20) ;
+    left: calc(var(--index)*40);
+    top: calc(var(--index)*-20);
+    color: #eed91ada;
+    text-shadow: 0 0 calc(var(--index)/1.4) black;
+}
+.lucky{
+    position: relative;
+    width:calc(var(--index)*20) ;
+    left: calc(var(--index)*32.9);
+    top: calc(var(--index)*-15);
+    color: #eed91ada;
+    text-shadow: 0 0 calc(var(--index)/1.4) black;
+    font-size:calc(var(--index)*2) ;
+}
