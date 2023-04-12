@@ -31,9 +31,6 @@ body{
     background-color: #000000e0;
     color: #fff;
     text-shadow: 0 0 calc(var(--index)*1.5);
-
-
-
 }
 .intro{
     font-size: calc(var(--index)*4);
