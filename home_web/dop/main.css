@@ -4,7 +4,8 @@
     box-sizing: border-box;
 }
 :root{
-    --index: calc(1vw + 1vh)
+    --index: calc(1vw + 1vh);
+    --transition: transform .75s cubic-bezier(.075, .5, 0, 1);
 }
 @font-face {
 	font-family: raleway_f;
@@ -16,6 +17,12 @@
 	src: url(../fonts/raleway-black.woff2);
 	font-weight: 900;
 }
+@font-face {
+	font-family: shlop-f;
+	src: url(fonts/DoubleFeature20.ttf);
+    font-weight: 900;
+
+}
 
 body{
     font-family: raleway_f, sans-serif;
@@ -24,23 +31,26 @@ body{
     background-color: #000000e0;
     color: #fff;
     text-shadow: 0 0 calc(var(--index)*1.5);
-    /* background-image: url(image/cosmic-background-with-colorful-laser-lights-perfect-for-a-digital-wallpaper.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed; */
+
+
 
 }
 .intro{
     font-size: calc(var(--index)*4);
     max-width: calc(var(--index)*35);
     max-height: calc(var(--index)*4);
+    margin: 0 0 0 calc(var(--index)*4); ;
     position: absolute;
-    color: #000000e0;
-    opacity: 1;
+    color:#fff; 
+    
+    
 }
 .intro:hover{
-    color: #fff;
+    cursor:default;
+    font-family: shlop-f;
+    color: #911a1a;
+    transition: color .8s linear;
+    font-weight: 900;
 }
 .header{
     display: flex;
@@ -62,14 +72,14 @@ body{
 }
 .paragraph{
     max-width: calc(var(--index)*30);
-    margin:calc(var(--index)/2) 0 0 0 ;
+    margin:calc(var(--index)/2) 0 0 0;
     font-size:calc(var(--index)/1.69);
 }
 
 .header__img{
     width:calc(var(--index)*28.9);
-    height:calc(var(--index)*9.2) ;
-    top: calc(var(--index)/9) ;
+    height:calc(var(--index)*9.2);
+    top: calc(var(--index)/9);
     position: absolute;
     z-index: -1;
     opacity: .3;
@@ -77,15 +87,21 @@ body{
 }
 .info{
     padding: calc(var(--index)*5) 0 calc(var(--index)) calc(var(--index));
-    width:calc(var(--index)*20) ;
-    /* border: 2px solid red; */
+    width:calc(var(--index)*20);
     font-size: calc(var(--index)/1.6);
+    
 }
 .info__h{
     font-weight: 900;
+    transform: translate3d(0,calc( var(--scrollTop)/10), 0);
+    transition: var(--transition);
+    will-change:transform ;
 }
 .info__p{
     font-family: cursive;
+    transform: translate3d(0,calc( var(--scrollTop)/10), 0);
+    transition: var(--transition);
+    will-change:transform ;
 
 }
 .back{
@@ -97,21 +113,45 @@ body{
     
 }
 #caves{
-    height:calc(var(--index)*42.5) ;
+    height:calc(var(--index)*42.5);
+    /* right:calc(var(--index)*-1.5) ; */
+    transform: translate3d(0,calc( var(--scrollTop)/-20), 0);
+    transition: var(--transition);
+    will-change: transform;
 }
 
 #rock{
-z-index: -1;
-top:calc(var(--index)*11) ;
+    z-index: 1;
+    top:calc(var(--index)*11);
+    right:calc(var(--index)*-1.5) ;
+    transform: translate3d(0,calc( var(--scrollTop)/-5), 0);
+    transition: var(--transition);
+    will-change: transform;
+}
+#rock1{
+    z-index: -1;
+    top:calc(var(--index)*11);
+    right:calc(var(--index)*-1.5) ;
+    transform: translate3d(0,calc( var(--scrollTop)/-20), 0);
+    transition: var(--transition);
+    will-change: transform;
 }
 
 #rock-2{
     z-index: -1;
-    top:calc(var(--index)*11) ;
+    top:calc(var(--index)*12.4);
+    right:calc(var(--index)*-1.5);
+    transform: translate3d(0,calc( var(--scrollTop)/-15), 0);
+    transition: var(--transition);
+    will-change: transform;
     }
 #rock-3{
     z-index: -1;
-    top:calc(var(--index)*11) ;
+    top:calc(var(--index)*10.9);
+    right: calc(var(--index)*-1.5);
+    transform: translate3d(0,calc( var(--scrollTop)/-15), 0);
+    transition: var(--transition);
+    will-change: transform;
     }
     
 .dragon{
@@ -119,6 +159,9 @@ top:calc(var(--index)*11) ;
     top: calc(var(--index)*10.4);
     left:calc(var(--index)*-4.5) ;
     z-index: -2;
+    transform: translate3d(0,calc( var(--scrollTop)/-15), 0);
+    transition: var(--transition);
+    will-change: transform;
 
 }
 .block{
@@ -129,27 +172,27 @@ top:calc(var(--index)*11) ;
     top: calc(var(--index)*10.726);
     z-index: -3;
     opacity: .3;
+    transform: translate3d(0,calc( var(--scrollTop)/-20), 0);
+    will-change: transform;
 }
 .valley{
     position: absolute;
     width: 100%;
     top: calc(var(--index)*53.42);
-    /* left:calc(var(--index)*) ; */
     z-index: -3;
+    transform: translate3d(0,calc( var(--scrollTop)/-20), 0);
+    transition: var(--transition);
+    will-change: transform;
 }
-#grass{
-    z-index: -2;
-    /* top: calc(var(--index)); */
-}
-#gerl{
-    z-index: -2;
-}
+
 .ice-valley{
     position: absolute;
     width: 100%;
     top: calc(var(--index)*90);
-    /* left:calc(var(--index)*) ; */
     z-index: -3;
+    transform: translate3d(0,calc( var(--scrollTop)/-20), 0);
+    transition: var(--transition);
+    will-change: transform;
 }
 
 #ice{
@@ -157,16 +200,20 @@ top:calc(var(--index)*11) ;
 }
 
 #ice-2{
-    z-index: -2;
+    z-index: 1;
 }
 .end{
     position: relative;
     width:calc(var(--index)*20) ;
-    left: calc(var(--index)*40);
+    left: calc(var(--index)*53);
     top: calc(var(--index)*-10);
     color: #eed91ada;
     text-shadow: 0 0 calc(var(--index)/1.4) black;
-    z-index: -3;
+    z-index: -1;
+    transform: translate3d(calc( var(--scrollTop)/-5),0,0);
+    transition: var(--transition);
+    will-change: transform;
+
 }
 .lucky{
     position: relative;
@@ -177,4 +224,7 @@ top:calc(var(--index)*11) ;
     text-shadow: 0 0 calc(var(--index)/1.4) black;
     font-size:calc(var(--index)*2) ;
     z-index: -3;
+    transform: translate3d(calc( var(--scrollTop)/-15),0,0);
+    transition: var(--transition);
+    will-change: transform;
 }
