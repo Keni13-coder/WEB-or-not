@@ -1,0 +1,98 @@
+Задачка 1:
+<?xml version = '1.0'?>
+<catalog>
+    <books>
+        <title>Камил видит руками</title>
+        <author>Томаш Маловски</author>
+        <pages>146</pages>
+        <date>2019</date>
+        <price>863</price>
+    </books>
+    <books>
+        <title>Вероятности и неприятности</title>
+        <author>Сергей Самойленко</author>
+        <pages>134</pages>
+        <date>2022</date>
+        <price>1055</price>
+    </books>
+    <books>
+        <title>Когда жизнь сбивает с ног</title>
+        <author>Расс Хэррис</author>
+        <pages>80</pages>
+        <date>2021</date>
+        <price>945</price>
+    </books>
+    <books>
+        <title>Цветы в темноте</title>
+        <author>Сестра Данг Нгием</author>
+        <pages>124</pages>
+        <date>2020</date>
+        <price>1027</price>
+    </books>
+    <books>
+        <title>Стратегии перемен</title>
+        <author>Джон Коттер</author>
+        <pages>102</pages>
+        <date>2022</date>
+        <price>1418</price>
+    </books>
+</catalog>
+
+Задачка 2:
+<?xml version ='1.0'?>
+<Students>
+    <User>
+        <initials>
+            <name>Анна</name>
+            <second>Карпова</second>
+            <last_name>Александровна</last_name>
+        </initials>
+        <date_of_birthday>2008</date_of_birthday>
+        <group>
+            <number_of_group>8</number_of_group>
+            <letter_of_group>а</letter_of_group>
+        </group>
+        <adress>
+            <city>Москва</city>
+            <street>Ленинский проспект</street>
+            <house>2</house>
+            <flat>277</flat>
+        </adress>
+    </User>
+    <User>
+        <initials>
+            <name>Михаил</name>
+            <second>Малышкин</second>
+            <last_name>Иванович</last_name>
+        </initials>
+        <date_of_birthday>2014</date_of_birthday>
+        <group>
+            <number_of_group>2</number_of_group>
+            <letter_of_group>Б</letter_of_group>
+        </group>
+        <adress>
+            <city>Москва</city>
+            <street>Ленинградское шоссе</street>
+            <house>10</house>
+            <flat>26</flat>
+        </adress>
+    </User>
+    <User>
+        <initials>
+            <name>Алла</name>
+            <second>Андреева</second>
+            <last_name>Петровна</last_name>
+        </initials>
+        <date_of_birthday>2015</date_of_birthday>
+        <group>
+            <number_of_group>1</number_of_group>
+            <letter_of_group>Г</letter_of_group>
+        </group>
+        <adress>
+            <city>Москва</city>
+            <street>Дмитровское шоссе</street>
+            <house>107</house>
+            <flat>2</flat>
+        </adress>
+    </User>
+</Students>

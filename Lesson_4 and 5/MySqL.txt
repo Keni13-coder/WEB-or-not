@@ -1,0 +1,18 @@
+CREATE TABL name(names,type, value)-создание таблицы, где names столбцы
+
+INSERT INTO EMPLOYEE VALUES(вставляем в таблицу)-добавляет что либо в таблицу
+построчно , под столбцы
+
+SELECT * FROM name WHERE names = ""; что показать и из Таблицы, где * говорит о применение ко всем элементам этой таблицы а names условие.
+
+
+create table users(
+  id integer primary key, 
+  name text not null,
+  age integer not null,
+  proff text not null
+);
+
+insert into users values (1, "Иван", 12, "Менеджер"), (2, "Костя", 18, "Разработчик"),  (3, "Петр", 36, "Дизайнер"), (4, "Данил", 45, "Разработчик");
+
+select * from users where age > 18 and proff = 'Разработчик';
